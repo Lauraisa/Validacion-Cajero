@@ -10,26 +10,15 @@ Se crea una función _isValiCard_.
  `var card = prompt("Ingresa el número de tarjeta")`
 ### Segundo   
 Luego se creará una nueva variable en donde se depositara el nuevo elemento.   
-`var newCode = card`separaremos los numeros en un estring, para ello utilizaremos un split y concat.
-   `var longitud = newCode.split("").conct()`.var newCard = newCode;
-   var suma = 0;
+`var newCode = card`, separaremos los números en un string, para ello utilizaremos un split y concat.
+   `var longitud = newCode.split("").conct()`.var newCard = newCode; var suma = 0;
+Para ello realisaremos un ciclo for:   
+si _para_ `(i=1; i<newCard.length; i+=2)` entoces se debe cumplir lo siguiente.   
+ `{suma+= parseInt(card.charAt[i])}` y si esto se cumple se da la siguiente condición.    
+ _si_ `(suma%10) == 0){alert("Número de tarjeta valida")}`.    
+ Caso contrario se cumple la otra condición. `else{alert("Número no valido")}`. Finalmente se invocara con un retorno la nueva variable  `newCard`.
 
-   for (i=1; i<newCard.length; i+=2){
-   suma+= parseInt(card.charAt[i]);
-     }
-     if (suma%10) == 0){
-       alert("Número de tarjeta valida");
-      }
-     else{
-       alert("Número no valido")
-      }
-
- return newCard;
- }
- isValicard();              
-
-
-  > # Código de Validación de trajeta de credito
+  > # Código de Validación de trajeta de crédito
 
 ```js
 //se crea la funcion isValicard.
@@ -58,3 +47,7 @@ return newCard;
 }
 isValicard();
  ```
+
+   > Link del Diagrama de fjujo
+   
+   > ![Diagrama de Flujo](https://code2flow.com/lo3GMr.png)
